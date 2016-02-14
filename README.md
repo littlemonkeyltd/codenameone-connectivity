@@ -2,7 +2,7 @@
 Simple library for getting basic connection information on codename one
 
 ## Installation
-Just install as any other cn1lib, copy the file to the libs folder of your project and refresh libs.
+Just install as any other cn1lib, copy [the file](Connectivity.cn1lib?raw=true) to the libs folder of your project and refresh libs.
 If the build hints don't merge automatically these are the lines to add to codename_settings.properties
 
 ```
