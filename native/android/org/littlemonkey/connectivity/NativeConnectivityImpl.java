@@ -32,11 +32,11 @@ public class NativeConnectivityImpl {
         NetworkInfo mWifi = connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
         NetworkInfo mMobile = connManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
 
-        if (mWifi.isConnected()) {
+        if (mWifi == null || mWifi.isConnected()) {
            return 2;
         }
 
-        if (mMobile.isConnected()) {
+        if (mMobile == null || mMobile.isConnected()) {
             return 1;
         }
         
